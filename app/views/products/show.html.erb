@@ -1,0 +1,16 @@
+<% unless notice.nil? %>
+  <div class="alert alert-info"><%= notice %></div>
+<% end %>
+
+<p>
+  <strong>Name:</strong>
+  <%= @product.name %>
+</p>
+
+<p>
+  <strong>Code:</strong>
+  <%= @product.code %>
+</p>
+
+<%= link_to 'Edit', edit_product_path(@product), :class => "btn" %> |
+<%= link_to 'Back', products_path, :class => "btn" %>

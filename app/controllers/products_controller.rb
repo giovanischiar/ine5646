@@ -73,7 +73,7 @@ class ProductsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def product_params
-      params.require(:product).permit(:name, :code, :description)
+      params.require(:product).permit(:name, :code, :desc)
     end
 
     # Store changes on event to create big data

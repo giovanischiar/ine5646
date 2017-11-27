@@ -1,5 +1,4 @@
 class OmniauthCallbacksController < Devise::OmniauthCallbacksController
-	skip_before_action :authenticate_user!
 	 
 	def google_oauth2
 	   # É necessário implementar o método abaixo em seu modelo (por ex., app/models/user.rb)
